@@ -5,6 +5,8 @@ body {
   color: white;
   margin-top: 3rem;
   margin-bottom: 3rem;
+  font-family: 'Cormorant Garamond', serif;
+
 }
 
 h1 {
@@ -24,7 +26,7 @@ h2 {
 nav {
   border-top: 1px solid #a37e2c;
   border-bottom: 1px solid #a37e2c;
-  margin-top: 1rem;
+  margin-top: 2rem;
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -37,6 +39,8 @@ nav li:hover {
   background-color: #daa520;
   /* border-radius: 5px; */
   cursor: pointer;
+  scale: 1.1;
+  transition-duration: 0.5s;
 }
 
 nav ul {
@@ -69,40 +73,65 @@ main {
   margin-right: 10%;
   animation: 2s ease-in-out hoverEffect;
 }
+
 section {
   display: flex;
-  border: 1px solid #a37e2c;
+  /* border: 1px solid #a37e2c; */
   /* padding: 1rem; */
 }
 section:first-of-type {
   border: none;
+  background-color: black;
+
   /* margin-top: 2rem; */
   /* background-color: none; */
 }
-section:first-of-type:hover {
+section:first-of-type article:hover {
   border: none;
   /* margin-top: 2rem; */
   /* background-color: none; */
   background-color: black;
+  scale: 1;
 }
+section:first-of-type article img {
+    border: none;
+    /* margin-top: 2rem; */
+    /* background-color: none; */
+    background-color: black;
+    scale: 1;
+    opacity: 0.8;
+    transition: all;
+    transition-duration: 1s;
+    border-radius: 5px;
+  }
+section:first-of-type article img:hover {
+    border: none;
+    /* margin-top: 2rem; */
+    /* background-color: none; */
+    background-color: black;
+    scale: 1.1;
+    opacity: 1;
+    transition: all;
+    transition-duration: 1s;
+  }
 
 article {
   flex: 1;
   /* margin: 2rem; */
   padding: 1rem;
 }
+article img {
+    border-radius: 5px;
+
+}
 article:hover {
   background-color: #a37e2c;
   scale: 1.1;
   transition-duration: 1s;
 }
-article:first-of-type:hover {
-  scale: 1;
-  background-color: black;
 
-}
 section:hover {
-  border: none;
+  /* border: none; */
   transition-duration: 1s;
 }
 /* section:hover {
@@ -119,8 +148,8 @@ footer {
   margin-top: 10%;
   border-top: 1px solid #a37e2c;
   padding-top: 1rem;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 footer div {
